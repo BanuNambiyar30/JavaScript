@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Element Manipulation</title>
+    <script>
+      function createListElement() {
+
+        var listItem = document.createElement("li");
+        listItem.innerHTML = "List Item";
+        listItem.id = "myListItem";
+        var list = document.getElementById("myList");
+        list.appendChild(listItem);
+
+        
+      }
+
+      function removeListElement() {
+        var listItem = document.getElementById("myListItem");
+        if (listItem) {
+          listItem.remove();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="createListElement()">Add Item</button>
+    <button onclick="removeListElement()">Remove Item</button>
+
+    <ul id="myList"></ul>
+  </body>
+</html>

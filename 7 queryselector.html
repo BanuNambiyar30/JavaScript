@@ -1,0 +1,63 @@
+<html>
+    <body>
+                <h1>Favorite TV shows</h1>
+                <ul class="list">
+                    <li>Golden Girls</li>
+                    <li>Archer</li>
+                    <li>Rick and Morty</li>
+                    <li>The Crown</li>
+                </ul>
+
+                <button onclick="myfunc()">See Results</button>
+    </body>
+
+    <script>
+
+
+                function myfunc()
+                
+                {        
+                    // tag name
+                        const h1Element = document.querySelector("h1").textContent;
+                        alert(h1Element);
+
+
+                    // class name (. prefix must)
+                        const list = document.querySelector(".list").textContent;
+                        alert(list);
+
+
+                    //  query selector all method
+                        const listItems = document.querySelectorAll("ul > li");
+
+
+
+                        listItems.forEach(
+                            (item) => 
+                            {
+                            alert(item.textContent);
+                            }
+                        );
+
+
+            
+
+            
+                            listItems.forEach(
+
+                            function (item) 
+                            {
+                            alert(item.textContent);
+                            }
+
+                            );
+
+            
+         
+
+
+                    }
+
+
+    </script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom</title>
+</head>
+
+<body id="temp">
+          
+          <h1 id="id_of_the_heading_tag">Glass Door</h1>
+            
+          <button onclick="manipulateStyles()">Change Heading</button>
+
+          <script type="text/javascript">
+
+              function manipulateStyles() {
+
+                    document.getElementById("id_of_the_heading_tag").textContent = "LinkedIn";
+
+                  //   document.getElementById("id_of_the_heading_tag").style.fontFamily = "Impact,Charcoal,sans-serif";
+                  
+                  //   document.getElementById("id_of_the_heading_tag").style.background = "aqua";
+
+                  //   document.getElementById("temp").style.background = "skyblue";
+
+                    // setTimeout(() => document.body.style.background = "grey", 2000);
+                    
+                    // setTimeout(() => document.body.style.background = "blue", 2000);
+
+              }
+
+          </script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom</title>
+</head>
+<body>
+ 
+                    <form name="myform"> 
+                    <br>
+
+                    Name :<input type="text" id="name_input"/>
+                    
+                    <br>
+                    <br>
+
+                    Initial :<input type="text" id="initial_input"/>
+                    
+                    <br>
+                    <br>
+
+                    <button onclick="printvalue()">Login</button>
+
+                    <br>
+                    <br>
+
+                    </form>
+
+
+                    <script type="text/javascript"> 
+
+                        function printvalue()
+                        { 
+                        
+                        var name_holder = document.getElementById("name_input").value;
+                        var initial_holder = document.getElementById("initial_input").value;
+
+                        alert("Hello : "+name_holder +initial_holder); 
+                        
+                        } 
+                        
+                    </script> 
+
+
+</body>
+</html>

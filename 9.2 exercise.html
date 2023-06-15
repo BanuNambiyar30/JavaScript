@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: gray;">
+
+<h1 style="color: aqua;">Creating Elements with New Lines</h1>
+
+<button onclick="addLabel()">Add Label</button>
+<button onclick="addTextbox()">Add Textbox</button>
+<button onclick="addButton()">Add Button</button>
+
+<script>
+  function addLabel() {
+    var label = document.createElement("label");
+    label.textContent = "Label Name";
+    document.body.appendChild(label);
+
+    var newline = document.createElement("br");
+    document.body.appendChild(newline);
+  }
+
+  function addTextbox() {
+    var textbox = document.createElement("input");
+    textbox.setAttribute("type", "text");
+    textbox.setAttribute("placeholder", "Enter text");
+    document.body.appendChild(textbox);
+
+    var newline = document.createElement("br");
+    document.body.appendChild(newline);
+  }
+
+  function addButton() {
+    var button = document.createElement("button");
+    button.textContent = "Click Me";
+    document.body.appendChild(button);
+
+    var newline = document.createElement("br");
+    document.body.appendChild(newline);
+  }
+</script>
+
+</body>
+</html>

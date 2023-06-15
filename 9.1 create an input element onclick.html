@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: gray;">
+
+            <h1 style="color: aqua;">Creating an Input element using createElement()</h1>
+
+            <button onclick="myFunction()">Add new</button>
+            <button onclick="removeListElement()">Remove</button>
+
+
+            <script>
+                function myFunction() 
+                    {
+                        var newline = document.createElement("br");
+                        document.body.appendChild(newline);
+
+                        var x = document.createElement("INPUT");
+
+                            x.setAttribute("type", "text");
+                            x.setAttribute("value", "Hello World!");
+                            x.setAttribute("id", "re");
+                            x.setAttribute("name", "myInput"); 
+                            x.style.backgroundColor = "black"; 
+                            x.style.color = "white"; 
+                            x.style.fontSize = "16px"; 
+                            x.style.fontFamily = "Arial"; 
+
+                        document.body.appendChild(x);
+                     
+                        
+
+
+                        var newline = document.createElement("br");
+                        document.body.appendChild(newline);
+                    }
+
+                    function removeListElement() {
+                            var rem = document.getElementById("re");
+                            if (rem) {
+                            rem.remove();
+                            }
+                        }
+            </script>
+
+            
+
+</body>
+</html>
